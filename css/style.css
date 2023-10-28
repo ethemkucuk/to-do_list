@@ -1,0 +1,136 @@
+/* Basic Styles */
+body {
+  background: #f2f2f2; /* Light gray background */
+  color: #333; /* Dark gray text color */
+  font-family: Lato, sans-serif; /* Lato font for text */
+}
+
+.container {
+  display: block;
+  width: 400px;
+  margin: 100px auto 0; /* Center the container on the page */
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li * {
+  float: left;
+}
+
+li, h3 {
+  clear: both;
+  list-style: none;
+}
+
+input, button {
+  outline: none;
+}
+
+button {
+  background: none;
+  border: 0;
+  color: #4a90e2; /* Blue button color */
+  font-size: 15px;
+  width: 60px;
+  margin: 10px 0 0;
+  font-family: Lato, sans-serif;
+  cursor: pointer;
+}
+
+button:hover {
+  color: #333; /* Dark gray text color on hover */
+}
+
+/* Headings */
+h3,
+label[for='new-task'] {
+  color: #4a90e2; /* Blue heading color */
+  font-weight: 700;
+  font-size: 15px;
+  border-bottom: 2px solid #4a90e2; /* Blue underline */
+  padding: 30px 0 10px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+input[type="text"] {
+  margin: 0;
+  font-size: 18px;
+  line-height: 18px;
+  height: 18px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 6px;
+  font-family: Lato, sans-serif;
+  color: #888; /* Light gray text color */
+}
+
+input[type="text"]:focus {
+  color: #333; /* Dark gray text color on focus */
+}
+
+/* New Task Section */
+label[for='new-task'] {
+  display: block;
+  margin: 0 0 20px;
+}
+
+input#new-task {
+  float: left;
+  width: 318px;
+}
+
+p > button:hover {
+  color: #0FC57C; /* Green button color on hover */
+}
+
+/* Task List */
+li {
+  overflow: hidden;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee; /* Light gray border line */
+}
+
+li > input[type="checkbox"] {
+  margin: 0 10px;
+  position: relative;
+  top: 15px;
+}
+
+li > label {
+  font-size: 18px;
+  line-height: 40px;
+  width: 237px;
+  padding: 0 0 0 11px;
+}
+
+li > input[type="text"] {
+  width: 226px;
+}
+
+li > .delete:hover {
+  color: #CF2323; /* Red delete button color on hover */
+}
+
+/* Completed Tasks */
+#completed-tasks label {
+  text-decoration: line-through;
+  color: #888; /* Light gray text color for completed tasks */
+}
+
+/* Edit Task */
+ul li input[type=text] {
+  display: none;
+}
+
+ul li.editMode input[type=text] {
+  display: block;
+}
+
+ul li.editMode label {
+  display: none;
+}

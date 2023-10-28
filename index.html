@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Custom Task List</title>
+    <!-- Include the Lato font from Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <!-- Include an external CSS file named "style.css" for styling the page -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8">
+  </head>
+  <body>
+    <div class="container">
+      <p>
+        <!-- Label for the input field to add a new task -->
+        <label for="new-task">Add a New Item</label>
+        <!-- Input field for adding a new task -->
+        <input id="new-task" type="text">
+        <!-- Button to add the new task -->
+        <button>Add</button>
+      </p>
+      
+      <h3>To-Do</h3>
+      <!-- Unordered list to hold incomplete tasks -->
+      <ul id="incomplete-tasks">
+        <!-- List item with a checkbox for a task, a label to display the task name,
+             an input field for editing, and buttons for editing and deleting -->
+        <li>
+          <input type="checkbox">
+          <label>Pay Your Bills</label>
+          <input type="text">
+          <button class="edit">Edit</button>
+          <button class="delete">Delete</button>
+        </li>
+        <!-- List item with edit mode, including a checkbox, a label, an input field with a task name,
+             buttons for saving changes and deleting -->
+        <li class="editMode">
+          <input type="checkbox">
+          <label>Go Shopping</label>
+          <input type="text" value="Go Shopping">
+          <button class="edit">Save</button>
+          <button class="delete">Delete</button>
+        </li>
+      </ul>
+      
+      <h3>Completed</h3>
+      <!-- Unordered list to hold completed tasks -->
+      <ul id="completed-tasks">
+        <!-- List item with a checked checkbox for a completed task, a label to display the task name,
+             an input field for editing, and buttons for editing and deleting -->
+        <li>
+          <input type="checkbox" checked>
+          <label>Visit the Doctor</label>
+          <input type="text">
+          <button class="edit">Edit</button>
+          <button class="delete">Delete</button>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Include an external JavaScript file named "app.js" for handling task list functionality -->
+    <script type="text/javascript" src="js/app.js"></script>
+
+  </body>
+</html>
